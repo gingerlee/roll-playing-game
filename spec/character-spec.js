@@ -5,6 +5,10 @@ describe('Character', function() {
     let character = new Character("Donna", "Cafeteria Lady");
     expect(character.playerName).toEqual("Donna");
   });
+  it('should test if inputted player name is captured', function() {
+    let character = new Character("Donna", "Cafeteria Lady");
+    expect(character.playerName).toEqual("Donna");
+  });
 
 
 });

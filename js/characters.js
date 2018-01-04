@@ -1,9 +1,7 @@
-
-
 export class Character {
-  constructor(playerName, characterName) {
+  constructor(playerName, characterType) {
   this.playerName = playerName;
-  this.characterName = characterName;
+  this.characterType = characterType;
   }
 
 }
@@ -14,7 +12,7 @@ export class NasaEngineer {
     this.strength = 3;
     this.intelligence = 10;
     this.motto = "To the future";
-    this.magic = "gravity"
+    this.magic = "gravity";
     this.weapon = "black holes";
   }
 }
@@ -25,8 +23,8 @@ export class MasterCarpenter {
     this.strength = 10;
     this.intelligence = 6;
     this.motto = "it's hammer time";
-    this.magic = "";
-    this.weapon = "";
+    this.magic = "roof jumping";
+    this.weapon = "nail gun";
 
   }
 }
@@ -36,7 +34,7 @@ export class JavascriptDeveloper {
     this.health = 4;
     this.strength = 5;
     this.intelligence = 9;
-    this.motto = "cool cool cool sweet sweet sweet"
+    this.motto = "cool cool cool sweet sweet sweet";
     this.magic = "code";
     this.weapon = "hacking";
 

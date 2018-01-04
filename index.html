@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="build/css/vendor.css">
     <link rel="stylesheet" href="build/css/main.css">
     <script src="build/js/vendor.min.js"></script>
@@ -18,17 +19,83 @@
         <h3>Enter Player Name</h3>
         <form id="new-game-start">
           <input id="player-name" required type="text" placeholder="Enter player name">
+          <h3>Choose a Character</h3>
+          <select class="form-control" id="character-selection">
+            <option value=""></option>
+            <option value="NASA Engineer">NASA Engineer</option>
+            <option value="Master Carpenter">Master Carpenter</option>
+            <option value="JavaScript Developer">JavaScript Developer</option>
+          </select>
+          <button id="start-button" class="btn btn-large" type="submit" name="button">Start</button>
         </form>
-        <h3>Choose a Character</h3>
-        <select class="form-control" id="character-selection">
-          <option value="1">NASA Engineer</option>
-          <option value="2">Master Carpenter</option>
-          <option value="3">JavaScript Developer</option>
-        </select>
-        <button class="btn btn-large start-button" type="submit" name="button">Start</button>
       </div>
 
+      <ul class="round-one">
 
+      </ul>
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="img/nasa-engineer.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">You Are a Nasa Engineer<i class="material-icons right">more_vert</i></span>
+          <p><a href="#">Start Game!</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Nasa Engineer<i class="material-icons right">close</i></span>
+          <p>Here are your attributes:</p>
+          <ul>
+            <li>Health: 7</li>
+            <li>Strength: 3</li>
+            <li>Intelligence: 10</li>
+            <li>Motto: "To The Future"</li>
+            <li>Magic: Gravity</li>
+            <li>Weapon: Black holes</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="img/craftsman.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">You Are a Master Carpenter<i class="material-icons right">more_vert</i></span>
+          <p><a href="#">Start Game!</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Master Carpenter<i class="material-icons right">close</i></span>
+          <p>Here are your attributes:</p>
+          <ul>
+            <li>Health: 5</li>
+            <li>Strength: 10</li>
+            <li>Intelligence: 6</li>
+            <li>Motto: "It's Hammer Time!"</li>
+            <li>Magic: Roof jumping</li>
+            <li>Weapon: Nail gun</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="img/javascript-dev.png">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">You Are a JavaScript Developer<i class="material-icons right">more_vert</i></span>
+          <p><a href="#">Start Game!</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">JavaScript Developer<i class="material-icons right">close</i></span>
+          <p>Here are your attributes:</p>
+          <ul>
+            <li>Health: 4</li>
+            <li>Strength: 5</li>
+            <li>Intelligence: 9</li>
+            <li>Motto: "Cool cool cool sweet sweet sweet"</li>
+            <li>Magic: Code</li>
+            <li>Weapon: Hacking</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </body>
 </html>

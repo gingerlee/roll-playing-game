@@ -7,11 +7,11 @@ Object.defineProperty(exports, "__esModule", {
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var Character = exports.Character = function Character(playerName, characterName) {
+var Character = exports.Character = function Character(playerName, characterType) {
   _classCallCheck(this, Character);
 
   this.playerName = playerName;
-  this.characterName = characterName;
+  this.characterType = characterType;
 };
 
 var NasaEngineer = exports.NasaEngineer = function NasaEngineer(health, strength, intelligence, motto, magic, weapon) {
@@ -32,8 +32,8 @@ var MasterCarpenter = exports.MasterCarpenter = function MasterCarpenter(health,
   this.strength = 10;
   this.intelligence = 6;
   this.motto = "it's hammer time";
-  this.magic = "";
-  this.weapon = "";
+  this.magic = "roof jumping";
+  this.weapon = "nail gun";
 };
 
 var JavascriptDeveloper = exports.JavascriptDeveloper = function JavascriptDeveloper(health, strength, intelligence, motto, magic, weapon) {
@@ -53,8 +53,14 @@ var JavascriptDeveloper = exports.JavascriptDeveloper = function JavascriptDevel
 var _characters = require('./../js/characters.js');
 
 $(document).ready(function () {
-  $('.start-button').submit(function (event) {
+
+  $('#new-game-start').submit(function (event) {
     event.preventDefault();
+    var playerName = $('#player-name').val();
+    var characterType = $('#character-selection').val();
+    var gamePlayer = new _characters.Character(playerName, characterType);
+
+    $('.round-one').append("<li>Player Name: " + playerName + "</li>" + "<li>Character Type: " + characterType + "</li>");
   });
 });
 
