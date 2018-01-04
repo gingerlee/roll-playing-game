@@ -12,28 +12,33 @@
   </head>
   <body>
     <div class="container">
-      <div class="jumbotron">
+      <header class="site-header">
         <h1>Welcome to Survivor Land</h1>
-      </div>
-      <div class="start-game">
-        <h3>Enter Player Name</h3>
-        <form id="new-game-start">
-          <input id="player-name" required type="text" placeholder="Enter player name">
-          <h3>Choose a Character</h3>
-          <select class="form-control" id="character-selection">
-            <option value=""></option>
-            <option value="NASA Engineer">NASA Engineer</option>
-            <option value="Master Carpenter">Master Carpenter</option>
-            <option value="JavaScript Developer">JavaScript Developer</option>
-          </select>
-          <button id="start-button" class="btn btn-large" type="submit" name="button">Start</button>
-        </form>
-      </div>
+      </header>
+      <section>
+            <div class="form-card card blue-grey darken-1 center">
+              <div class="card-content white-text">
+                <span class="card-title">Enter Player Name</span>
+                <form id="new-game-start">
+                  <input id="player-name" required type="text" placeholder="Enter player name">
+                  <h5>Choose a Character</h5>
+                  <select class="form-control" id="character-selection">
+                    <option value=""></option>
+                    <option value="NASA Engineer">NASA Engineer</option>
+                    <option value="Master Carpenter">Master Carpenter</option>
+                    <option value="JavaScript Developer">JavaScript Developer</option>
+                  </select>
+                  <button id="start-button" class="btn btn-large" type="submit" name="button">Start</button>
+                </form>
+              </div>
+            </div>
+      </section>
 
       <ul class="round-one">
 
       </ul>
-      <div class="card">
+
+      <div class="card" id="nasa-character">
         <div class="card-image waves-effect waves-block waves-light">
           <img class="activator" src="img/nasa-engineer.jpg">
         </div>
@@ -54,7 +59,7 @@
           </ul>
         </div>
       </div>
-      <div class="card">
+      <div class="card" id="carpenter-character">
         <div class="card-image waves-effect waves-block waves-light">
           <img class="activator" src="img/craftsman.jpg">
         </div>
@@ -75,7 +80,7 @@
           </ul>
         </div>
       </div>
-      <div class="card">
+      <div class="card" id="js-character">
         <div class="card-image waves-effect waves-block waves-light">
           <img class="activator" src="img/javascript-dev.png">
         </div>
