@@ -2,7 +2,9 @@
 'use strict';
 
 $(document).ready(function () {
-  $('').submit();
+  $('.start-button').submit(function (event) {
+    event.preventDefault();
+  });
 });
 
 },{}]},{},[1]);
