@@ -22,6 +22,7 @@ var lib = require('bower-files')({
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
+var babelify = require('babelify');
 
 gulp.task('jshint', function(){
   return gulp.src(['js/*.js'])
@@ -37,6 +38,9 @@ gulp.task('concatInterface', function() {
 
 gulp.task('jsBrowserify', ['concatInterface'], function() {
   return browserify({ entries: ['./tmp/allConcat.js'] })
+    .transform(babelify.configure({
+      presets: ["es2015"]
+    }))
     .bundle()
     .pipe(source('app.js'))
     .pipe(gulp.dest('./build/js'));

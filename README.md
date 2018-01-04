@@ -1,6 +1,6 @@
-# Create A Role Playing Game
+# JavaScript BDD: Role Playing Game
 
-##### Javascript, Gulp, Node - practice pipeline
+##### JavaScript, Gulp, Node - Practice Asset Pipeline
 
 #### By Ginger and Cheryl, 1/4/18
 
