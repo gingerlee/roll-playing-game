@@ -59,6 +59,9 @@ $(document).ready(function () {
     var playerName = $('#player-name').val();
     var characterType = $('#character-selection').val();
     var gamePlayer = new _characters.Character(playerName, characterType);
+    var engineer = new _characters.NasaEngineer(health, strength, intelligence, motto, magic, weapon);
+    var carpenter = new _characters.MasterCarpenter(health, strength, intelligence, motto, magic, weapon);
+    var developer = new _characters.JavascriptDeveloper(health, strength, intelligence, motto, magic, weapon);
 
     $('.round-one').append("<li>Player Name: " + playerName + "</li>" + "<li>Character Type: " + characterType + "</li>");
   });
