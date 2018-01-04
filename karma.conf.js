@@ -37,7 +37,7 @@ module.exports = function(config) {
     //babelify our code
     browserify: {
       debug: true,
-      transform: [ [ 'babelify', {presets: ["es2015"]} ] ]
+      transform: [ [ 'babelify', {presets: ["env"]} ] ]
     },
 
     // web server port

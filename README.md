@@ -6,7 +6,7 @@
 
 ## Description
 
-_Test._
+_Create a role playing game with the theme of ._
 
 ## Setup/Installation Requirements
 
@@ -25,7 +25,7 @@ _Test._
   * It could include a short description of what each does for you
 
 2. Specs
-_The site will ._
+_The game will allow you to choose a character you want to be in the game._
 * _Input:_
 * _Output:_
 
