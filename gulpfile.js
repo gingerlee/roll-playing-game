@@ -9,6 +9,13 @@ var jshint = require('gulp-jshint');
 var buildProduction = utilities.env.production;
 var lib = require('bower-files')({
   "overrides":{
+    "materialize" : {
+      "main": [
+        "sass/materialize.scss",
+        "dist/css/materialize.css",
+        "dist/js/materialize.js"
+      ]
+    },
     "bootstrap" : {
       "main": [
         "less/bootstrap.less",
