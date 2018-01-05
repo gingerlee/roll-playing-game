@@ -1,20 +1,20 @@
 
 
-export class Character extends classes (NasaEngineer, MasterCarpenter, JavascriptDeveloper)  {
+export class Character {
   constructor(playerName, characterType) {
   this.playerName = playerName;
   this.characterType = characterType;
   }
-  showCharacter() {
-    if (this.characterType === "Nasa Engineer")
-    return characterType;
-  } else if {
-    (this.characterType === "Master Carpenter")
-    return characterType;
-  } else if {
-    (this.characterType === "JavaScript Developer")
-    return characterType;
-  }
+  // showCharacter() {
+  //   if (this.characterType === "Nasa Engineer")
+  //   return characterType;
+  // } else if {
+  //   (this.characterType === "Master Carpenter")
+  //   return characterType;
+  // } else if {
+  //   (this.characterType === "JavaScript Developer")
+  //   return characterType;
+  // }
 }
 
 export class NasaEngineer {

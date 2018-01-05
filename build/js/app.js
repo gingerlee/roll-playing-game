@@ -12,7 +12,18 @@ var Character = exports.Character = function Character(playerName, characterType
 
   this.playerName = playerName;
   this.characterType = characterType;
-};
+}
+// showCharacter() {
+//   if (this.characterType === "Nasa Engineer")
+//   return characterType;
+// } else if {
+//   (this.characterType === "Master Carpenter")
+//   return characterType;
+// } else if {
+//   (this.characterType === "JavaScript Developer")
+//   return characterType;
+// }
+;
 
 var NasaEngineer = exports.NasaEngineer = function NasaEngineer(health, strength, intelligence, motto, magic, weapon) {
   _classCallCheck(this, NasaEngineer);
@@ -64,6 +75,7 @@ $(document).ready(function () {
     var developer = new _characters.JavascriptDeveloper(health, strength, intelligence, motto, magic, weapon);
 
     $('.round-one').append("<li>Player Name: " + playerName + "</li>" + "<li>Character Type: " + characterType + "</li>");
+    showCharacter();
   });
 });
 

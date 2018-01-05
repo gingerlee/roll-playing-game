@@ -15,7 +15,7 @@ $(document).ready(function() {
     $('.round-one').append("<li>Player Name: " + playerName + "</li>" +
                           "<li>Character Type: " + characterType + "</li>"
                           );
-
+    showCharacter();
   });
 
 });
